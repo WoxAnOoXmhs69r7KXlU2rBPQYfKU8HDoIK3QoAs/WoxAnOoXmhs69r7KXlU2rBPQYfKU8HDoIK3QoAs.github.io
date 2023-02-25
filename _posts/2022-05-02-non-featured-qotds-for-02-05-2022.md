@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Non-featured QOTDs for 02/05/2022
-date: 2022-07-12 19:45
+date: 2022-05-02 19:45
 author: yeahgamesdevs
 comments: true
 categories: [Non-featured QOTDs, Non-featured quotes, QOTD, Quotes]
+image: https://yeaharchives.files.wordpress.com/2022/07/image-35.png?w=890
 ---
 <!-- wp:paragraph -->
 <p>Archive of the non-featured quotes of the day from Monday, May 2nd, 2022. </p>

@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Non-featured QOTDs for 29/04/2022
-date: 2022-07-12 17:56
+date: 2022-04-29 17:56
 author: yeahgamesdevs
 comments: true
 categories: [Non-featured QOTDs, Non-featured quotes, QOTD, Quotes]
+image: https://yeaharchives.files.wordpress.com/2022/07/screen-shot-2022-07-12-at-5.44.21-pm.png?w=894
 ---
 <!-- wp:paragraph -->
 <p>Archive of the non-featured quotes of the day from Friday, April 29th, 2022. </p>
