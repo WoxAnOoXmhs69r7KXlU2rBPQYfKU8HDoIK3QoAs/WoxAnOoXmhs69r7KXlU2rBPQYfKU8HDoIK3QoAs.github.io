@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Non-featured QOTDs for 09/05/2022
-date: 2022-07-14 11:50
+date: 2022-05-09 11:50
 author: yeahgamesdevs
 comments: true
 categories: [Non-featured QOTDs, Non-featured quotes, QOTD, Quotes]
