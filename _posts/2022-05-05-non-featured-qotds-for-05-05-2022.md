@@ -6,6 +6,7 @@ author: yeahgamesdevs
 comments: true
 categories: [Non-featured QOTDs, Non-featured quotes, QOTD, Quotes]
 image: https://yeaharchives.files.wordpress.com/2022/07/image-47.png?w=892
+token: dZ7Jb1Glxix2WfwJA263KjHldjEymPdiTQzyZodK9rQMZM4dyVIoZPBplpa8XEn95IbpgYcCloqa48sivqmNtdF7W4AKuZxzTafvst8fzsxRGWdJsnXk2JIMoZ6aG0g4oZDLuSFfsxeJ
 ---
 <!-- wp:paragraph -->
 <p>Archive of the non-featured quotes of the day from Thursday, May 5th, 2022. </p>
