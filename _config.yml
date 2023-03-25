@@ -16,18 +16,27 @@ description: > # this means to ignore newlines until "baseurl:"
 url: "https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net" # the base hostname & protocol for your site
 
 #sidebar
-default-image: https://archives-cdn.yeahgames.net/cdn/network/logo.png # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
+default-image: https://cdn.yeahgames.net/img/branding/logos/text/red.png # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
 
 #footer
 
-built-by: The yEAh Games Corporation, LLC.
+built-by: The yEAh Games Corporation, LLC. # For robot crawling & indexing
 
-copyright:
+collection: # Details about your collection
+   name: Quote Archive
+   shortname: Quotes # The common, short name of your collection (1 word only)
+   link: '//quotes.yeahgames.net' # The link to your collection's website
+
+owner: # Details about your collection's owner(s)/management
+   name: The yEAh Archiving Team
+   link: '//yank.yeahgames.net'
+
+copyright: # Copyright details
    name: The yEAh Games Corporation, LLC.
    link: 'https://yeahgames.net'
 
 # Build settings
-permalink: /posts/:title/
+permalink: /posts/:title/ #NOTE: CHANGE TO /ITEM EVENTUALLY, ONCE A SERVER-SIDE REDIRECT SLOT HAS BEEN FREED
 paginate: 9
 paginate_path: /page:num/
 
@@ -43,13 +52,9 @@ facebook:
 quora:
 twitter: http://twitter.com/yEAhGames_
 github: http://github.com/yEAh-Games
-email: yeahgamesdevs@gmail.com
-
-#facebook like box
-fb-like-box: no
-fb-app-id: 549480635219583
-fb-page-url: https://www.facebook.com/webjeda/
-fb-page-title: webjeda
+email: admin@yeahgames.net
+mastodon: https://mstdn.social/@yeah
+instagram: https://instagram.com/_yeahgames
 
 # Sass style
 sass:

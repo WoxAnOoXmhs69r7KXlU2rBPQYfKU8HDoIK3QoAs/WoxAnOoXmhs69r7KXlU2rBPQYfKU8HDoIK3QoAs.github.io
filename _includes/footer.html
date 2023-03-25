@@ -1,32 +1,39 @@
 <footer class="mt-4 mt-md-5">
   <div class="container">
     <div class="row p20">
-      {% if site.copyright.name %}
       <div class="col-md-4 text-center mt25">
-        Some rights reserved by
-        <a target="_blank" href="{{site.copyright.link}}"
-          >{{site.copyright.name}}</a
-        >
+        The <a href="//{{site.collection.link}}">{{site.collection.name}}</a> is a <a href="//libary.yeahgames.net">library</a> <a href="//collections.yeahgames.net">collection</a> and part of the <a href="//yeahgames.net">yEAh Network</a>.
+        <br><br>
+        This collection is run by <a href="{{site.owner.link}}">{{site.owner.name}}</a></a> in collaboration with The yEAh Library. Some rights reserved.
       </div>
-      {% endif %}
       <div class="col-md-4 text-center mt25">
       </div>
       <div class="col-md-4 text-center mt25">
         {% if site.facebook %}
         <a target="_blank" href="{{site.facebook}}"
-          ><li class="social facebook"><i class="fa fa-facebook-square"></i></li
+          ><li class="social facebook"><i class="fa-brands fa-facebook"></i></li
         ></a>
         {% endif %} {% if site.quora %}
         <a target="_blank" href="{{site.quora}}"
-          ><li class="social quora"><i class="fa fa-quora"></i></li
+          ><li class="social quora"><i class="fa-brands fa-quora"></i></li
         ></a>
         {% endif %} {% if site.twitter %}
         <a target="_blank" href="{{site.twitter}}"
-          ><li class="social twitter"><i class="fa fa-twitter-square"></i></li
+          ><li class="social twitter"><i class="fa-brands fa-twitter"></i></li
         ></a>
-        {% endif %} {% if site.github %}
+        {% endif %}         
+        {% if site.mastodon %}
+        <a target="_blank" href="{{site.mastodon}}"
+          ><li class="social"><i class="fa-brands fa-mastodon"></i></li
+        ></a>
+        {% endif %}        {% if site.instagram %}
+        <a target="_blank" href="{{site.instagram}}"
+          ><li class="social"><i class="fa-brands fa-instagram"></i></li
+        ></a>
+        {% endif %}  
+        {% if site.github %}
         <a target="_blank" href="{{site.github}}"
-          ><li class="social github"><i class="fa fa-github-square"></i></li
+          ><li class="social github"><i class="fa-brands fa-github"></i></li
         ></a>
         {% endif %} {% if site.email %}
         <a target="_blank" href="mailto:{{site.email}}"
