@@ -13,3 +13,16 @@
   " /feed.xml" | relative_url }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
+<script>
+  window.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (event.target.tagName === 'A' && event.target.href) {
+      var path = event.target.getAttribute('href');
+      window.parent.postMessage({
+        target: 'iframe-link',
+        href: path
+      }, '*');
+    }
+  });
+</script>
