@@ -6,7 +6,7 @@ layout: default
   <div class="row">
     {% for post in paginator.posts %}   
       <div class="col-12 col-md-6 col-lg-4">
-       <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">
+       <a href="{{ post.url | relative_url }}" class="index-anchor">
         <div class="card rounded overflow-hidden">  
           <div class="image">
             {% if post.image %}
