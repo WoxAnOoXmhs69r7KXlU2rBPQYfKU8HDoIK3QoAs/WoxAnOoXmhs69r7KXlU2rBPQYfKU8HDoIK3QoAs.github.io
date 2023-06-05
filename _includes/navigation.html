@@ -47,29 +47,32 @@
             <input type="text" id="search-input" placeholder="Search this collection...">
             <ul id="results-container"></ul>
           </div>
-          <li class="nav-item">
-          <div title="Loading your yEAh network account..." id="loadingContainer"></div>
-          <div id="loginContainer" style="float:right!important"></div>
-          <div id="profileContainer">
-            <div id="profilePicture"></div>
-            <div id="dropdownContainer">
-            </div>
-          </div>
-          </li>
-          <script src="/search/search.js" type="text/javascript"></script>
-
-          <!-- Configuration -->
-          <script>
-            SimpleJekyllSearch({
-              searchInput: document.getElementById('search-input'),
-              resultsContainer: document.getElementById('results-container'),
-              json: '/search/search.json'
-            })
-          </script>
-
         </div>
       </li>
-    </ul>
+
+      <li class="nav-item">
+        <div title="Loading your yEAh network account..." id="loadingContainer"></div>
+        <div id="loginContainer" style="float:right!important"></div>
+        <div id="profileContainer">
+          <div id="profilePicture"></div>
+          <div id="dropdownContainer">
+          </div>
+        </div>
+      </li>
+      <script src="/search/search.js" type="text/javascript"></script>
+
+      <!-- Configuration -->
+      <script>
+        SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/search/search.json'
+        })
+      </script>
+
+  </div>
+  </li>
+  </ul>
   </div>
 </nav>
 
