@@ -6,7 +6,7 @@ layout: default
   <div class="row">
     {% for post in paginator.posts %}   
       <div class="col-12 col-md-6 col-lg-4">
-       <a href="https://quotes.yeahgames.net/{{ post.url | relative_url }}" class="index-anchor">
+       <a href="https://quotes.yeahgames.net{{ post.url | relative_url }}" target="_blank" class="index-anchor">
         <div class="card rounded overflow-hidden">  
           <div class="image">
             {% if post.image %}
