@@ -1,93 +1,72 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <nav class="container navbar navbar-expand-lg navbar-light bg-transparent">
   <a class="navbar-brand" href="https://quotes.yeahgames.net/">Collection: Quotes</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href={{"/" | relative_url}}
-          >Home <span class="sr-only">(current)</span></a
-        >
+        <a class="nav-link" href={{"/" | relative_url}}>Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href={{"https://yeahgames.net" | relative_url}} >Network</a>
+        <a class="nav-link" href={{"https://yeahgames.net" | relative_url}}>Network</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href={{"https://library.yeahgames.net" | relative_url}} >Library</a>
+        <a class="nav-link" href={{"https://library.yeahgames.net" | relative_url}}>Library</a>
       </li>
       <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="//x.yeahgames.net/archives/collections/{{site.collection.shortname}}/submit">Submit a quote!</a>
-          <a class="dropdown-item" href="//x.yeahgames.net/archives/collections/{{site.collection.shortname}}/archive">Archive a quote!</a>
+          <a class="dropdown-item"
+            href="//x.yeahgames.net/archives/collections/{{site.collection.shortname}}/submit">Submit a quote!</a>
+          <a class="dropdown-item"
+            href="//x.yeahgames.net/archives/collections/{{site.collection.shortname}}/archive">Archive a quote!</a>
           <a class="dropdown-item" href="//x.yeahgames.net/archives/collections/start">Work on this collection!</a>
           <div class="dropdown-divider"></div>
-          <a
-            class="dropdown-item"
-            target="_blank"
-            href="https://x.yeahgames.net/inquiry/library/{{site.collection.shortname}}?subject='null'&src='header'"
-            >Contact/inquiry</a
-          >
-          
+          <a class="dropdown-item" target="_blank"
+            href="https://x.yeahgames.net/inquiry/library/{{site.collection.shortname}}?subject='null'&src='header'">Contact/inquiry</a>
+
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-        <b><i class="fa-solid fa-search"></i>&#160;Search</b>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b><i class="fa-solid fa-search"></i>&#160;Search</b>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <div id="search-container">
             <input type="text" id="search-input" placeholder="Search this collection...">
             <ul id="results-container"></ul>
+          </div>
+          <li class="nav-item">
+          <div title="Loading your yEAh network account..." id="loadingContainer"></div>
+          <div id="loginContainer" style="float:right!important"></div>
+          <div id="profileContainer">
+            <div id="profilePicture"></div>
+            <div id="dropdownContainer">
             </div>
-            <div title="Loading your yEAh network account..." id="loadingContainer"></div>
-            <div id="loginContainer" style="float:right!important"></div>
-            <div id="profileContainer">
-                <div id="profilePicture"></div>
-                <div id="dropdownContainer">
-                </div>
-            </div>
-            <script src="/search/search.js" type="text/javascript"></script>
-            
-            <!-- Configuration -->
-            <script>
+          </div>
+          </li>
+          <script src="/search/search.js" type="text/javascript"></script>
+
+          <!-- Configuration -->
+          <script>
             SimpleJekyllSearch({
               searchInput: document.getElementById('search-input'),
               resultsContainer: document.getElementById('results-container'),
               json: '/search/search.json'
             })
-            </script>
-          
+          </script>
+
         </div>
       </li>
     </ul>
