@@ -6,7 +6,7 @@ layout: default
   <div class="row">
     {% for post in paginator.posts %}   
       <div class="col-12 col-md-6 col-lg-4">
-       <a href="{{ post.url | relative_url }}" class="index-anchor">
+       <a href="https://quotes.yeahgames.net/{{ post.permalink }}" class="index-anchor">
         <div class="card rounded overflow-hidden">  
           <div class="image">
             {% if post.image %}
@@ -43,7 +43,7 @@ layout: default
         <ul class="pagination">
           {% if paginator.previous_page %}
             <li class="page-item">
-              <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+              <a class="page-link" href="https://quotes.yeahgames.net/{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
             </li>
           {% else %}
             <li class="page-item disabled">
@@ -58,17 +58,17 @@ layout: default
               </li>
             {% elsif page == 1 %}
               <li class="page-item">
-                <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                <a class="page-link" href="https://quotes.yeahgames.net/{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
               </li>
             {% else %}
               <li class="page-item">
-                <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                <a class="page-link" href="https://quotes.yeahgames.net/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
             {% endif %}
           {% endfor %}
 
           {% if paginator.next_page %}
             <li class="page-item">
-              <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+              <a class="page-link" href="https://quotes.yeahgames.net/{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
             </li>
           {% else %}
             <li class="page-item" disabled>
