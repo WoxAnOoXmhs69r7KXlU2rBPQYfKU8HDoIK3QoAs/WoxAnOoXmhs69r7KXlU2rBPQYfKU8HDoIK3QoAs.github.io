@@ -1,6 +1,41 @@
 <head>
   <title>{% if page.title %}{{page.title}} | {% endif %}The yEAh Quote Archive</title>
   <meta charset="utf-8" />
+  <script>function fetchPS(username) {
+    return fetch('https://accounts.yeahgames.net/data/accounts.json')
+      .then(response => response.json())
+      .then(data => {
+        const user = data.find(user => user.username === username);
+  
+        if (user && user.protectedSites) {
+          return user.protectedSites;
+        } else {
+          return {};
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching protected sites:', error);
+        return {};
+      });
+  }
+  
+  function deleteDOMAndRedirect() {
+    document.documentElement.innerHTML = '';
+    window.location.href = 'https://quotes.yeahgames.net';
+  }
+  
+  function checkpSAuthorization(username, subdomain) {
+    return fetchPS(username)
+      .then(protectedSites => {
+        if (protectedSites[subdomain] === true) {
+          return true;
+        } else {
+          deleteDOMAndRedirect();
+          return false;
+        }
+      });
+  }
+  </script>
   <script>
     if (window.self === window.top) {
       var currentPath = window.location.pathname;
