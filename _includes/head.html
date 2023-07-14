@@ -1,6 +1,13 @@
 <head>
   <title>{% if page.title %}{{page.title}} | {% endif %}The yEAh Quote Archive</title>
   <meta charset="utf-8" />
+  <script>
+    if (window.self === window.top) {
+      var currentPath = window.location.pathname;
+      var redirectUrl = "https://quotes.yeahgames.net" + currentPath;
+      window.location.href = redirectUrl;
+    }
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow">
