@@ -3,10 +3,10 @@ layout: default
 ---
 <div class="home py-4 py-md-5">
   <div class="row">
-    {% for post in paginator.posts %}   
-      <div class="col-12 col-md-6 col-lg-4">
-       <a href="https://quotes.yeahgames.net{{ post.url | relative_url }}" target="_blank" class="index-anchor">
-        <div class="card rounded overflow-hidden">  
+    {% for post in paginator.posts %}
+    <div class="col-12 col-md-6 col-lg-4">
+      <a href="https://quotes.yeahgames.net{{ post.url | relative_url }}" target="_blank" class="index-anchor">
+        <div class="card rounded overflow-hidden">
           <div class="image">
             {% if post.image %}
             <style>
@@ -14,69 +14,98 @@ layout: default
                 width: 100%;
                 height: 96%;
               }
+
               img {
                 width: 100%;
                 height: 100%;
               }
             </style>
             <div class="box">
-              <img src="{{post.image | relative_url}}" alt="{{post.title}}"/>
+              <img src="{{post.image | relative_url}}" alt="{{post.title}}" />
             </div>
             {% endif %}
             <div class="card-body">
-              <b><h2 class="panel-title" style="font-size:16px!important">{{ post.title | truncate: 35 }}</b></h2>
-              <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span></p>
-               <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
+              {% capture quote-title %}
+              {% if post.title contains 'Non-featured' and post.title contains 'QOTD' %}Non-featured QOTDs for {{
+              post.date | date: "%d/%m/%Y" }}{% else %}Featured QOTD for {{ post.date | date: "%d/%m/%Y" }}{% endif %}
+              {% endcapture %}
+
+              {% assign extracted_part = post.title | split: '(' | last | remove: ')' %}
+
+
+              <b>
+                <h2 class="panel-title" style="font-size:16px!important">{{quote-title}}
+              </b></h2>
+              <p class="p-0 my-1 mx-0">
+              <span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}&#160;<span
+                      style="font-size:10px">•</span>&#160;
+                      
+                      <a style="color:white!important" {% if post.title
+                      contains 'Non-featured' %}href="https://quotes.yeahgames.net/quotes/qotd/non-featured" {% else %}href="https://quotes.yeahgames.net/quotes/qotd/featured"
+                      {% endif %}
+                      title="{% if post.title contains 'Non-featured' %}Non-featured QOTD{% else %}Featured QOTD{% endif %}">QOTD{% if post.title contains 'Non-featured' %}s{% endif %}</a>&#160;{% if post.title contains '(' %}<span
+                  style="font-size:10px">•</span>&#160;{{ extracted_part }}{% endif %}
+                </small></span></p>
             </div>
           </div>
         </div>
       </a>
-      </div>
+    </div>
     {% endfor %}
   </div>
-</div> 
-    
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-        {% if paginator.total_pages > 1 %}
-        <ul class="pagination">
-          {% if paginator.previous_page %}
-            <li class="page-item">
-              <a class="page-link" href="https://quotes.yeahgames.net/{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-            </li>
-          {% else %}
-            <li class="page-item disabled">
-              <span class="page-link">Previous</span>
-            </li>
-          {% endif %}
+</div>
 
-          {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <li class="page-item active">
-                <span class="page-link">{{ page }}</span>
-              </li>
-            {% elsif page == 1 %}
-              <li class="page-item">
-                <a class="page-link" href="https://quotes.yeahgames.net/{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-              </li>
-            {% else %}
-              <li class="page-item">
-                <a class="page-link" href="https://quotes.yeahgames.net/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-            {% endif %}
-          {% endfor %}
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    {% if paginator.total_pages > 1 %}
+    <ul class="pagination" style="background-color:#1d1f24!important">
+      {% if paginator.previous_page %}
+      <li class="page-item" style="color:#ff4747!important">
+        <a class="page-link"
+          href="https://quotes.yeahgames.net{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i
+            class="fa-solid fa-backward"></i></a>
+      </li>
+      {% else %}
+      <li class="page-item disabled" style="cursor:not-allowed!important">
+        <span style="color:#ff4747!important" class="page-link"><i class="fa-solid fa-backward"></i></span>
+      </li>
+      {% endif %}
 
-          {% if paginator.next_page %}
-            <li class="page-item">
-              <a class="page-link" href="https://quotes.yeahgames.net/{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-            </li>
-          {% else %}
-            <li class="page-item" disabled>
-              <span class="page-link">Next</span>
-            </li>
-          {% endif %}
-          </ul>
-        {% endif %}
-    </div>
+      {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+      <li class="page-item active">
+        <span style="background-color:#ff4747!important;color:white!important;border-color:#ff4747!important"
+          class="page-link">{{ page }}</span>
+      </li>
+      {% elsif page == 1 %}
+      <li class="page-item">
+        <a class="page-link"
+          href="https://quotes.yeahgames.net{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{
+          page }}</a>
+      </li>
+      {% else %}
+      <li class="page-item">
+        <a class="page-link"
+          href="https://quotes.yeahgames.net{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
+          page }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+      <li class="page-item" style="color:#ff4747!important">
+        <a class="page-link"
+          href="https://quotes.yeahgames.net{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i
+            class="fa-solid fa-forward"></i></a>
+      </li>
+      {% else %}
+      <li class="page-item" style="cursor:not-allowed!important" disabled>
+        <span class="page-link" style="color:#ff4747!important"><i class="fa-solid fa-forward"></i></span>
+      </li>
+      {% endif %}
+    </ul>
+    {% endif %}
   </div>
+</div>
 
 </div>

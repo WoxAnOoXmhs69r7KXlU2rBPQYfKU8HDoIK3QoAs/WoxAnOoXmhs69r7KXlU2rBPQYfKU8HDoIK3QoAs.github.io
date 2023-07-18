@@ -4,6 +4,8 @@ body {
   font-size: $base-font-size;
 }
 
+a {color:#ff4747!important;text-decoration:none!important}
+
 .navbar {
   border-radius: 0;
   border-bottom: 1px solid #eee;
@@ -43,28 +45,27 @@ img {
   }
 }
 .post-meta {
-  color: $grey-color;
+  color: white;
 }
+
+.page-item:focus-visible{outline-color:#ff4747!important}
 
 .card {
   margin-bottom: 2em;
   border: none;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
+  background-color:#1d1f24!important;
+  color:white;
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 0px 3px 0px #bbb,
-      0px 4px 0px #b9b9b9, 0px 6px 0px rgba(0, 0, 0, 0.1),
-      0px 1px 0px rgba(0, 0, 0, 0.3), 0px 3px 0px rgba(0, 0, 0, 0.2),
-      0px 5px 0px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.1),
-      0 8px 7px rgba(0, 0, 0, 0.1), 0 9px 9px rgba(0, 0, 0, 0.1),
-      0 10px 10px rgba(0, 0, 0, 0.15), 0 15px 15px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px #ff4747,0px 2px 0px #ff4747,0px 3px 0px #ff4747,0px 4px 0px #ff4747,0px 6px 0px #ff4747;
   }
 
   .image {
     img {
-      height: 220px;
+      height: 275px;
       object-fit: cover;
       object-position: center;
       @media screen and (max-width: $on-palm) {
@@ -73,6 +74,29 @@ img {
     }
   }
 }
+
+
+.page-link{background-color:#1d1f24!important;border-color:#0c0e14!important}
+
+.page-item.disabled .page-link {border-color:#0c0e14!important}
+
+.page-link:hover{background-color:#ff4747!important;color:#fff!important}
+
+small {font-size:90%!important}
+
+#search-container{background-color:#1d1f24;color:#ff4747}
+
+.dropdown-menu {background-color:#1d1f24!important;color:#ff4747!important}
+
+#search-input{  background: #0c0e14;
+  border-color: #ff4747;
+  border-radius: 8px;
+  outline:none!important;
+  color:white;
+  padding-left:5px
+}
+
+#search-dropdown{background:transparent!important}
 
 footer {
   border-top: 1px solid $grey-color-light;

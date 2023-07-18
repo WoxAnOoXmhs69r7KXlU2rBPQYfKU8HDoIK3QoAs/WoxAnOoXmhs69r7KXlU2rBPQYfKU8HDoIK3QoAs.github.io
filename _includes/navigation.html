@@ -25,7 +25,7 @@
         <a class="nav-link" href={{"https://library.yeahgames.net" | relative_url}}>Library</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           More
         </a>
@@ -41,12 +41,12 @@
 
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+      <li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           <b><i class="fa-solid fa-search"></i>&#160;Search</b>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="search-dropdown">
           <div id="search-container">
             <input type="text" id="search-input" placeholder="Search this collection...">
             <ul id="results-container"></ul>
@@ -65,7 +65,6 @@
       </li>
       <script src="/search/search.js" type="text/javascript"></script>
 
-      <!-- Configuration -->
       <script>
         SimpleJekyllSearch({
           searchInput: document.getElementById('search-input'),
