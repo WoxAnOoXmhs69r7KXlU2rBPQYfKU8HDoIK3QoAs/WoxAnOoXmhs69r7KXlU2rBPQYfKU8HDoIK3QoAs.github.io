@@ -8,17 +8,32 @@
       alt="{{page.title}}"
     />
     {% endif %}
+    {% if page.layout contains 'qotd' %}
+    <img
+      width="600"
+      class="rounded" title="Quote image for {{page.date |date: "%B %d, %Y"}} ({{page.number}})" style="border-radius: 7px !important;border: 2px solid #1d1f24;"
+      src="/archive/img/qotd/{{page.date | date: '%Y/%m/%d'}}{% if page.permalink contains 'non-featured' %}.png{% else %}/{{page.number | remove: '/3' | remove: '/2' | remove: '/1'}}.png{% endif %}" onerror="this.onerror=null; this.src='/images/placeholder.jpg';" alt="{{page.title}}"
+    />
+    {% endif %}
+  
   </div>
 
-  <div class="mt10 recent">
-    <h2>Recent quotes</h2>
+  <div class="mt10 recent" style="background-color:#1d1f24;border-color:#1d1f24;border-radius:7px">
+    <h2 style="font-size:1.3rem!important">Recent quotes</h2>
     <ul>
-      {% for post in site.related_posts limit:3 %}
+      {% for post in site.related_posts limit:6 %}
+
+      {% capture quote-title %}
+      {% if post.title contains 'Non-featured' and post.title contains 'QOTD' %}Non-featured QOTDs for {{
+      post.date | date: "%d/%m/%Y" }}{% else %}Featured QOTD for {{ post.date | date: "%d/%m/%Y" }}{% endif %}
+      {% endcapture %}
+
+      {% assign extracted_part = post.title | split: '(' | last | remove: ')' %}
 
       <li>
         <p>
-          <a href="https://quotes.yeahgames.net{{ post.url  | relative_url }}">{{ post.title }}</a
-          ><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small>
+          <a href="https://quotes.yeahgames.net{{ post.url  | relative_url }}" title="{{ quote-title |date: "%B %d, %Y" | remove: 'Featured QOTD for' | remove: 'Non-featured QOTDs for' | remove: extracted_part}}">{{ quote-title |date: "%B %d, %Y" | remove: 'Featured QOTD for' | remove: 'Non-featured QOTDs for' | remove: extracted_part}}</a
+          ><small style="float:right!important">&nbsp;&nbsp;{% if post.number %}<span style="color:#ff4747;background-color:#0c0e14;border-radius:3px">{{ post.number}}</span>{% endif %}{% if post.token %}{% if post.title contains 'Non-featured' %}<span title="Non-featured" style="color:#ff7c7c;background-color:#0c0e14;border-radius:3px;padding:4px"><i class="fa-solid fa-list"></i></span>{% else %}<span title="Featured" style="color:#ff4747;background-color:#0c0e14;border-radius:3px;padding:4px"><i class="fa-solid fa-star"></i></span>&#160;<span style="color:#ff4747;background-color:#0c0e14;border-radius:3px;padding:4px">{{extracted_part | remove: ')' |remove: '('}}</span>{% endif %}{% endif %}</small>
         </p>
       </li>
 

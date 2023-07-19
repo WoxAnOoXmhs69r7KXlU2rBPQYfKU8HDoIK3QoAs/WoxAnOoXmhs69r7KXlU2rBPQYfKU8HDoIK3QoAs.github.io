@@ -21,7 +21,23 @@ layout: default
               }
             </style>
             <div class="box">
-              <img src="{{post.image | relative_url}}" alt="{{post.title}}" />
+              <img src="{{post.image | relative_url}}" onerror="this.onerror=null; this.src='/images/placeholder.jpg';" alt="{{post.title}}" />
+            </div>
+
+            {% else %}
+            <style>
+              .box {
+                width: 100%;
+                height: 96%;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            </style>
+            <div class="box">
+              <img src="/archive/img/qotd/{{post.date | date: '%Y/%m/%d'}}{% if post.permalink contains 'non-featured' %}.png{% else %}/{{post.number | remove: '/3' | remove: '/2' | remove: '/1'}}.png{% endif %}" onerror="this.onerror=null; this.src='/images/placeholder.jpg';" alt="{{post.title}}" />
             </div>
             {% endif %}
             <div class="card-body">
@@ -33,18 +49,19 @@ layout: default
               {% assign extracted_part = post.title | split: '(' | last | remove: ')' %}
 
 
-              <b>
+              <b style="color:#ff4747!important">
                 <h2 class="panel-title" style="font-size:16px!important">{{quote-title}}
               </b></h2>
               <p class="p-0 my-1 mx-0">
               <span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}&#160;<span
                       style="font-size:10px">•</span>&#160;
                       
-                      <a style="color:white!important" {% if post.title
-                      contains 'Non-featured' %}href="https://quotes.yeahgames.net/quotes/qotd/non-featured" {% else %}href="https://quotes.yeahgames.net/quotes/qotd/featured"
+                      <span style="touch-action: manipulation!important;color:white!important" {% if post.title
+                      contains 'Non-featured' %}onclick="event.preventDefault(); window.location.href = 'https://quotes.yeahgames.net/quotes/qotd/non-featured';" {% else %}onclick="event.preventDefault(); window.location.href = 'https://quotes.yeahgames.net/quotes/qotd/featured';"
                       {% endif %}
-                      title="{% if post.title contains 'Non-featured' %}Non-featured QOTD{% else %}Featured QOTD{% endif %}">QOTD{% if post.title contains 'Non-featured' %}s{% endif %}</a>&#160;{% if post.title contains '(' %}<span
-                  style="font-size:10px">•</span>&#160;{{ extracted_part }}{% endif %}
+                      title="{% if post.title contains 'Non-featured' %}Non-featured QOTDs{% else %}Featured QOTD{% endif %}">QOTD{% if post.title contains 'Non-featured' %}s{% endif %}</span>&#160;{% if post.number %}<span
+                  style="font-size:10px">•</span>&#160;{{ post.number }} {% else %}{% if post.title contains ')' %}<span
+                  style="font-size:10px">•</span>&#160;{{ extracted_part }}{% endif %} {% endif %}
                 </small></span></p>
             </div>
           </div>

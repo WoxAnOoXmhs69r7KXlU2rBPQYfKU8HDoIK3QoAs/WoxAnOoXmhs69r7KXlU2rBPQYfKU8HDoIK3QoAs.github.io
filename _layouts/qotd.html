@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+<style>
+  blockquote {
+    width: 580px;
+    height: auto;
+    background-color: #1d1f24;
+    margin: 0;
+    border-radius: 15px;
+    padding: 48px;
+    box-shadow: 15px 20px #ff4747;
+    box-sizing: border-box;
+  }
+
+  #symbolbox {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 200px;
+    color: #ff4747;
+    font-weight: 900;
+    display: block;
+    height: 80px;
+    line-height: 165px;
+  }
+
+  #quotebox {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 1.4;
+    color: white;
+  }
+
+  #quotehr {
+    border: 0.5px solid white;
+  }
+
+  #quotepfp {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 0 -5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+  }
+
+  #name {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 450;
+    vertical-align: middle;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+  }
+
+  #quotedate {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+</style>
+
+<div class="row">
+  <div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline" style="margin-bottom:-0.3rem!important;font-weight:550;font-size:1.5rem;text-decoration:none">
+          {% if page.permalink contains 'non-featured' %}Non-featured QOTDs for {{page.date | date: '%d/%m/%Y'}} {% else
+          %}Featured QOTD for {{ page.date | date: "%d/%m/%Y" }} <span style="border-radius: 5px;
+          padding: 5px;
+          background-color: #1d1f24;
+          color: #ff4747;">({{page.number}})</span>{% endif %}
+        </h1>
+        <p class="post-meta">
+          Quote published on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date
+            | date: "%b %-d, %Y" }}.</time>
+        </p>
+      </header>
+
+      {% capture profile_image %}
+      {% if page.saidby contains '@' %}
+      https://ugc.yeahgames.net/profile/p/default/png{{ page.saidby }}.png
+      {% else %}
+      https://ugc.yeahgames.net/profile/p/default/png/default.png
+      {% endif %}
+      {% endcapture %}
+
+      <div class="post-content" itemprop="articleBody">
+        <blockquote>
+          <span id="symbolbox">“</span>
+          <p id="quotebox">{{page.quote}}</p>
+          <hr id="quotehr" />
+          <img id="quotepfp" src="{{profile_image}}">
+          <div style="font-size:150%" id="name"><span>{% if page.saidby contains '@'%}<a href="https://members.yeahgames.net/{{page.saidby}}"><span style="color:#ff4747!important">@</span>{{page.saidby | remove: "@"}}{% else %}{{page.saidby}}{% endif %}</span><br><span id="quotedate">{{ page.date | date: "%B %d, %Y" }}</span><br></div>
+        </blockquote>
+
+
+      </div>
+    </article>
+
+    <div class="next-previous-articles">
+      <nav aria-label="">
+        <ul class="pagination">
+          {% if page.next.url %}
+          <li class="page-item">
+            <a class="page-link" href="https://quotes.yeahgames.net{{page.next.url}}" tabindex="-1">&laquo;
+              {{page.next.title}}</a>
+          </li>
+          {% endif %} {% if page.previous.url %}
+          <li class="page-item">
+            <a class="page-link" href="https://quotes.yeahgames.net{{page.previous.url}}">{{page.previous.title}}
+              &raquo;</a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+    <div class="">
+      <script src="https://giscus.app/client.js" data-repo="yeah-games/library" data-repo-id="R_kgDOIrwbaA"
+        data-category="Announcements" data-category-id="DIC_kwDOIrwbaM4CTSVt" data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+        data-theme="https://cdn.yeahgames.net/css/sheet/net/comments/dark.css" data-lang="en" data-loading="lazy"
+        crossorigin="anonymous" async>
+        </script>
+    </div>
+  </div>
+
+  {% include sidebar.html %}
+</div>
+
+{% include fb-script.html %}
