@@ -1,0 +1,311 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/css/output.css">
+</script>
+
+<style>
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1370px!important;
+  }
+}
+
+  blockquote {
+    width: auto;
+    margin-right: 1rem !important;
+    height: auto;
+    background-color: #1d1f24;
+    margin: 0;
+    border-radius: 15px;
+    padding: 48px;
+    box-shadow: 15px 20px #ff4747;
+    box-sizing: border-box;
+  }
+
+  #symbolbox {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 200px;
+    color: #ff4747;
+    font-weight: 900;
+    display: block;
+    height: 80px;
+    line-height: 165px;
+  }
+
+  #quotebox {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 1.4;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  #quotehr {
+    border: 0.5px solid white;
+    margin-bottom: 1rem;
+  }
+
+  #quotepfp {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 0 -5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+  }
+
+  #name {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 450;
+    vertical-align: middle;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+  }
+
+  #quotedate {
+    font-weight: 100;
+    font-size: 14px;
+  }
+</style>
+
+<div class="row">
+  <div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline"
+          style="margin-bottom:0rem!important;font-weight:550;font-size:1.5rem;text-decoration:none">
+          {% if page.permalink contains 'non-featured' %}Non-featured QOTDs for {{page.date | date: '%d/%m/%Y'}} {% else
+          %}Featured QOTD for {{ page.date | date: "%d/%m/%Y" }} <span style="border-radius: 5px;
+          padding: 5px;
+          background-color: #1d1f24;
+          color: #ff4747;">({{page.number}})</span>{% endif %}
+        </h1>
+        <p class="post-meta">
+          Quote published on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date
+            | date: "%b %-d, %Y" }}.</time>
+        </p>
+      </header>
+
+      {% capture profile_image %}
+      {% if page.saidby contains '@' %}
+      https://ugc.yeahgames.net/profile/p/default/png{{ page.saidby }}.png
+      {% else %}
+      https://ugc.yeahgames.net/profile/p/default/png/default.png
+      {% endif %}
+      {% endcapture %}
+
+      <div class="post-content" itemprop="articleBody" style="margin-top:1rem">
+        <blockquote id="quote">
+          <span id="symbolbox">“</span>
+          <p id="quotebox">{{page.quote}}</p>
+          <hr id="quotehr" />
+          <img id="quotepfp" src="{{profile_image}}">
+          <div style="font-size:150%" id="name"><span>{% if page.saidby contains '@'%}<a
+                href="https://members.yeahgames.net/{{page.saidby}}"><span
+                  style="color:#ff4747!important">@</span>{{page.saidby | remove: "@"}}{% else %}{{page.saidby}}{% endif
+                %}</span><br><span id="quotedate">{{ page.date | date: "%B %d, %Y" }}</span><br></div>
+        </blockquote>
+        <br>
+        <br>
+
+        <h2 id="metadata"
+          style="text-decoration: none !important;font-size: 1.2rem;font-weight: 501;margin-bottom: 0.5rem;"
+          class="post-title">Metadata</h2>
+
+
+        <div style="border-radius:5px!important" class="relative overflow-x-auto shadow-md sm:rounded-lg">
+          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr style="background-color:#15171C">
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Quote&#160;<i class="fa-solid fa-circle-info" title="The quote"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Date&#160;<i class="fa-solid fa-circle-info"
+                      title="The date the quote was recorded and published"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Status<i style="margin-left:2px" class="fa-solid fa-circle-info"
+                      title="If the quote was featured"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Number&#160;<i class="fa-solid fa-circle-info"
+                      title="If it was featured, its position among the featured quotes"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Context&#160;<i class="fa-solid fa-circle-info"
+                      title="Context provided relating to the quote"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Author&#160;<i class="fa-solid fa-circle-info" title="Who said the quote"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Submitter&#160;<i class="fa-solid fa-circle-info" title="Who submitted the quote to us"></i>
+                  </nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Level&#160;<i class="fa-solid fa-circle-info"
+                      title="Quote safety label (Normal, NSFW, Restricted) "></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Tags&#160;<i class="fa-solid fa-circle-info" title="Tags/keywords attached to the quote"></i>
+                  </nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Notes&#160;<i class="fa-solid fa-circle-info" title="Notes by the submitter or publisher "></i>
+                  </nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Discord&#160;<i class="fa-solid fa-circle-info"
+                      title="The link to the quote in the Discord channel"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>Image&#160;<i class="fa-solid fa-circle-info"
+                      title="The link to the quote's attached featured image"></i></nobr>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <nobr>JSON&#160;<i class="fa-solid fa-circle-info"
+                      title="JSON API endpoint for this quote. Check the docs for more info."></i></nobr>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #1d1f24;" class="bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  "<span id="data.quote">{{page.quote}}</span>"
+                </th>
+                <td class="px-6 py-4">
+                  <span id="data.date" title="{{ page.date
+                    | date: " %b %-d, %Y" }}">{{page.date | date: "%Y-%d-%m" }}</span>
+                </td>
+                <td class="px-6 py-4" style="color:#ff4747">
+                  <i title="Featured" aria-label="Featured" class="fa-solid fa-star"><span id="data.status"
+                      style="display:none">Featured</span></i>
+                </td>
+                <td class="px-6 py-4">
+                  <span id="data.number">{{page.number}}</span>
+                </td>
+                <td class="px-6 py-4">
+                  {% if page.context and page.context != "" and page.context != "null" %}
+                  <span id="data.context">{{ page.context }}</span>
+                  {% else %}
+                  <span id="data.context">None</span>
+                  {% endif %}
+                </td>
+                <td class="px-6 py-4">
+                  <nobr title="{{page.saidby}}">
+                    {% if page.saidby contains '@' %}<a style="text-decoration:none"
+                      href="https://members.yeahgames.net/{{page.saidby}}"><img
+                        src="https://ugc.yeahgames.net/profile/p/default/png/{{page.saidby}}.png"
+                        style="display: inline;width: 1rem;border-radius: 50%;overflow: hidden;object-fit: cover;height: 1rem;margin-right: 0.1rem;font-size:120%"><span
+                        style="color:#ff4747">@</span><span id="data.saidby"
+                        style="display:none">{{page.saidby}}</span>{{page.saidby | remove: '@'}}</a>{% else %}<span
+                      id="data.saidby">{{page.saidby}}</span>{% endif %}
+                  </nobr>
+                </td>
+                <td class="px-6 py-4">
+                  <nobr title="{{page.submitter}}">
+                    {% if page.submitter contains '@' %}<a
+                      style="text-decoration:none!important;font-size:120%!important;color:white!important"
+                      href="https://members.yeahgames.net/{{page.submitter}}"><img
+                        src="//ugc.yeahgames.net/profile/p/default/png/{{page.submitter}}.png"
+                        style="display: inline;width: 1rem;border-radius: 50%;overflow: hidden;object-fit: cover;height: 1rem;margin-right: 0.1rem;"><span
+                        style="color:#ff4747">@</span><span id="data.submitter"
+                        style="display:none">{{page.submitter}}</span>{{page.submitter | remove: '@'}}</a>{% else
+                    %}<span id="data.submitter">{{page.submitter}}</span>{% endif %}
+                  </nobr>
+                </td>
+                <td class="px-6 py-4">
+                  {{page.level | capitalize}}
+                </td>
+                <td class="px-6 py-4">
+                  <nobr>{% for tag in page.tags %}<a
+                      href="https://library.yeahgames.net/tags/{{tag | slugify}}">{{tag}}</a>, {% endfor %}</nobr><span
+                    style="display:none" id="data.tags">[{% for tag in page.tags %}"{{tag}}",{% endfor %}]</span>
+                </td>
+                <td class="px-6 py-4">
+                  <nobr id="data.notes">
+                    {% if page.notes and page.notes != "" and page.notes != "null" %}
+                    {{ page.notes }}
+                    {% else %}
+                    None
+                    {% endif %}
+                  </nobr>
+                </td>
+                <td class="px-6 py-4">
+                  <nobr>
+                    <span style="display:none" id="data.discord">{{page.discord}}</span><a href="{{page.discord}}"><i
+                        class="fa-solid fa-message"></i>&#160;Message</a>
+                  </nobr>
+                </td>
+                <td class="px-6 py-4">
+                  <nobr>
+                    <span style="display:none"
+                      id="data.image">https://[TOKEN]-secure.yeahgames.net/archive/img/qotd/{{page.date | date:
+                      '%Y/%m/%d'}}{% if page.permalink contains 'non-featured' %}.png{% else %}/{{page.number | remove:
+                      '/3' | remove: '/2' | remove: '/1'}}.png{% endif %}</span><a
+                      href="/archive/img/qotd/{{page.date | date: '%Y/%m/%d'}}{% if page.permalink contains 'non-featured' %}.png{% else %}/{{page.number | remove: '/3' | remove: '/2' | remove: '/1'}}.png{% endif %}"><i
+                        class="fa-solid fa-image"></i>&#160;Source</a>
+                  </nobr>
+                </td>
+                <td class="px-6 py-4">
+                  <nobr>
+                    <span style="display:none" id="data.json">https://[TOKEN]-secure.yeahgames.net/api/qotd/{{page.date
+                      | date: '%Y/%m/%d'}}{% if page.permalink contains 'non-featured' %}.json{% else %}/{{page.number |
+                      remove: '/3' | remove: '/2' | remove: '/1'}}.json{% endif %}</span><a
+                      href="/api/qotd/{{page.date | date: '%Y/%m/%d'}}{% if page.permalink contains 'non-featured' %}.json{% else %}/{{page.number | remove: '/3' | remove: '/2' | remove: '/1'}}.json{% endif %}"><i
+                        class="fa-solid fa-code"></i>&#160;Link</a>
+                  </nobr>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+    </article>
+
+    <div class="next-previous-articles">
+      <nav aria-label="">
+        <ul class="pagination">
+          {% if page.next.url %}
+          <li class="page-item" style="margin-top:-3rem!important">
+            <a class="page-link" href="https://quotes.yeahgames.net{{page.next.url}}" tabindex="-1">&laquo;
+              {{page.next.title}}</a>
+          </li>
+          {% endif %} {% if page.previous.url %}
+          <li class="page-item" style="margin-top:-3rem!important">
+            <a class="page-link" href="https://quotes.yeahgames.net{{page.previous.url}}">{{page.previous.title}}
+              &raquo;</a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+    <div class="">
+      <script src="https://giscus.app/client.js" data-repo="yeah-games/library" data-repo-id="R_kgDOIrwbaA"
+        data-category="Announcements" data-category-id="DIC_kwDOIrwbaM4CTSVt" data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+        data-theme="https://cdn.yeahgames.net/css/sheet/net/comments/dark.css" data-lang="en" data-loading="lazy"
+        crossorigin="anonymous" async>
+        </script>
+    </div>
+  </div>
+
+  {% include sidebar.html %}
+</div>
+
+{% include fb-script.html %}
