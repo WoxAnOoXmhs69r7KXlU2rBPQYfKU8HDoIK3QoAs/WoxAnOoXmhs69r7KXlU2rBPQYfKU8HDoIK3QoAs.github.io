@@ -64,4 +64,6 @@ sass:
 plugins: 
   - jekyll-paginate
   - jekyll-seo-tag
+  - generate_quote_json
+
 

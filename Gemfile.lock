@@ -1,3 +1,8 @@
+PATH
+  remote: _plugins/generate_quote_json
+  specs:
+    generate_quote_json (1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,6 +43,7 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    json (2.6.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -67,9 +73,11 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  generate_quote_json!
   jekyll
   jekyll-paginate
   jekyll-seo-tag
+  json
 
 BUNDLED WITH
    2.3.26
