@@ -28,12 +28,12 @@ collection: # Details about your collection
    link: '//quotes.yeahgames.net' # The link to your collection's website
 
 owner: # Details about your collection's owner(s)/management
-   name: The yEAh Archiving Team
-   link: '//archiveteam.yeahgames.net'
+   name: The yEAh Archives
+   link: '//archives.yeahgames.net'
 
 copyright: # Copyright details
-   name: The yEAh Games Corporation, LLC.
-   link: 'https://yeahgames.net'
+   name: yEAh Corp, LLC.
+   link: 'https://www.yeahgames.net'
 
 # Build settings
 permalink: /posts/:title/ #NOTE: CHANGE TO /ITEM EVENTUALLY, ONCE A SERVER-SIDE REDIRECT SLOT HAS BEEN FREED
