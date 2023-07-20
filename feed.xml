@@ -4,10 +4,10 @@
     <title>The Quotes Archive</title>
     <description>Host of the official yEAh Games quote collection for quotes of the day, quotes of the month, quotes of the year, etc. Readable and searchable at https://quotes.yeahgames.net. Library collections (https://library-collections.yeahgames.net) are a way to browse aggregated Archives content in a separate library designed for a certain purpose. 
 </description>
-    <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/</link>
+    <link>http://localhost:4000/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Jul 2023 03:56:29 +0000</pubDate>
-    <lastBuildDate>Thu, 20 Jul 2023 03:56:29 +0000</lastBuildDate>
+    <pubDate>Thu, 20 Jul 2023 00:04:46 -0400</pubDate>
+    <lastBuildDate>Thu, 20 Jul 2023 00:04:46 -0400</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -51,9 +51,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Wed, 28 Sep 2022 17:10:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/09/28/1</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/09/28/1</guid>
+        <pubDate>Wed, 28 Sep 2022 17:10:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/09/28/1</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/09/28/1</guid>
         
         <category>bruh</category>
         
@@ -114,9 +114,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Wed, 21 Sep 2022 17:38:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/09/21/1</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/09/21/1</guid>
+        <pubDate>Wed, 21 Sep 2022 17:38:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/09/21/1</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/09/21/1</guid>
         
         <category>bruh</category>
         
@@ -163,7 +163,7 @@
 &lt;!-- /wp:separator --&gt;
 
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Quote(s): &lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I'm gonna go and just rape those little kids!&quot;&lt;/code&gt; — &lt;strong&gt;Mason Smith&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;Who would you get pregnant to attempt to defraud the government?&quot; (&lt;strong&gt;Tallinn Quinton&lt;/strong&gt;) &quot;[…] Yeah, Becca&quot; (&lt;strong&gt;Aidan Kuhn&lt;/strong&gt;)&lt;/code&gt; — &lt;strong&gt;Various people&lt;br /&gt;&lt;/strong&gt;&lt;code&gt;&quot;The female sexually assaulted me!&quot; (&lt;strong&gt;Neil MacDonald&lt;/strong&gt;) &quot;Yeah, the female hit my ball away&quot; (&lt;strong&gt;Ethan Robinson&lt;/strong&gt;)&lt;/code&gt; — &lt;strong&gt;Various people&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;Date of registration(s): &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;code&gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Preview image:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quote(s): &lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I&apos;m gonna go and just rape those little kids!&quot;&lt;/code&gt; — &lt;strong&gt;Mason Smith&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;Who would you get pregnant to attempt to defraud the government?&quot; (&lt;strong&gt;Tallinn Quinton&lt;/strong&gt;) &quot;[…] Yeah, Becca&quot; (&lt;strong&gt;Aidan Kuhn&lt;/strong&gt;)&lt;/code&gt; — &lt;strong&gt;Various people&lt;br /&gt;&lt;/strong&gt;&lt;code&gt;&quot;The female sexually assaulted me!&quot; (&lt;strong&gt;Neil MacDonald&lt;/strong&gt;) &quot;Yeah, the female hit my ball away&quot; (&lt;strong&gt;Ethan Robinson&lt;/strong&gt;)&lt;/code&gt; — &lt;strong&gt;Various people&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;Date of registration(s): &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;code&gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Preview image:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 
 &lt;!-- wp:image {&quot;id&quot;:917,&quot;width&quot;:365,&quot;height&quot;:365,&quot;sizeSlug&quot;:&quot;large&quot;,&quot;linkDestination&quot;:&quot;none&quot;} --&gt;
@@ -179,9 +179,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Mon, 09 May 2022 11:50:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/non-featured/2022/05/09</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/non-featured/2022/05/09</guid>
+        <pubDate>Mon, 09 May 2022 11:50:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/non-featured/2022/05/09</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/non-featured/2022/05/09</guid>
         
         <category>Non-featured QOTDs</category>
         
@@ -222,7 +222,7 @@
 &lt;!-- /wp:separator --&gt;
 
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;Honestly, [I'd prefer] to [have sex with] Neil over Becca; she's too ugly.&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Aidan Kuhn&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;yEAh Games Team&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;When asked his opinion on the subject, he said this.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;Honestly, [I&apos;d prefer] to [have sex with] Neil over Becca; she&apos;s too ugly.&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Aidan Kuhn&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;yEAh Games Team&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;When asked his opinion on the subject, he said this.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 
 &lt;!-- wp:image {&quot;id&quot;:912,&quot;sizeSlug&quot;:&quot;large&quot;,&quot;linkDestination&quot;:&quot;none&quot;} --&gt;
@@ -238,9 +238,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Mon, 09 May 2022 11:32:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/09/3</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/09/3</guid>
+        <pubDate>Mon, 09 May 2022 11:32:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/05/09/3</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/05/09/3</guid>
         
         <category>aidan</category>
         
@@ -291,7 +291,7 @@
 &lt;!-- /wp:separator --&gt;
 
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;&quot;Bro, Ethan, you're a condom!&quot; (Neil MacDonald) &quot;[…] And I'm gonna use you!&quot; (Roan Ly)&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Various people&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;Ethan Robinson&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;&quot;Ethan was saying that he used to be the defence for the female goalie in ice hockey, so Neil said this.&quot; (Context by submitter) However for the second part, there was no context; quote was literal.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;&quot;Bro, Ethan, you&apos;re a condom!&quot; (Neil MacDonald) &quot;[…] And I&apos;m gonna use you!&quot; (Roan Ly)&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Various people&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;Ethan Robinson&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;&quot;Ethan was saying that he used to be the defence for the female goalie in ice hockey, so Neil said this.&quot; (Context by submitter) However for the second part, there was no context; quote was literal.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 
 &lt;!-- wp:image {&quot;id&quot;:909,&quot;sizeSlug&quot;:&quot;large&quot;,&quot;linkDestination&quot;:&quot;none&quot;} --&gt;
@@ -307,9 +307,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Mon, 09 May 2022 11:28:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/09/2</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/09/2</guid>
+        <pubDate>Mon, 09 May 2022 11:28:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/05/09/2</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/05/09/2</guid>
         
         <category>bruh</category>
         
@@ -360,7 +360,7 @@
 &lt;!-- /wp:separator --&gt;
 
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;&quot;I time-travelled forwards in time so I could legally [have anal sex] with [Aidan's] sister.&quot; (Torin Gauld) […] &quot;Do you regret saying th[e previous quote]?&quot; (Aidan Kuhn) &quot;No.&quot; (Torin Gauld)&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Various people&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;yEAh Games Team&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;No context; quote was literal. He had previously been talking about how he had accidentally said 'Anal Farm' instead of 'Animal Farm,' but it slowly evolved into this.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;&quot;I time-travelled forwards in time so I could legally [have anal sex] with [Aidan&apos;s] sister.&quot; (Torin Gauld) […] &quot;Do you regret saying th[e previous quote]?&quot; (Aidan Kuhn) &quot;No.&quot; (Torin Gauld)&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Various people&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;09/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;yEAh Games Team&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;No context; quote was literal. He had previously been talking about how he had accidentally said &apos;Anal Farm&apos; instead of &apos;Animal Farm,&apos; but it slowly evolved into this.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 
 &lt;!-- wp:image {&quot;id&quot;:906,&quot;sizeSlug&quot;:&quot;large&quot;,&quot;linkDestination&quot;:&quot;none&quot;} --&gt;
@@ -376,9 +376,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Mon, 09 May 2022 11:17:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/09/1</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/09/1</guid>
+        <pubDate>Mon, 09 May 2022 11:17:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/05/09/1</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/05/09/1</guid>
         
         <category>aidan</category>
         
@@ -431,7 +431,7 @@
 &lt;!-- /wp:separator --&gt;
 
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Quote(s): &lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;Oooh, it's lumpy cum [sic]!&quot;&lt;/code&gt; — &lt;strong&gt;Norah Watts&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I might wanna eat some [of] that white stuff…&quot;&lt;/code&gt; — &lt;strong&gt;Norah Watts&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I love massaging wet fish.&quot;&lt;/code&gt; — &lt;strong&gt;Norah Watts&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;Yeah, just shove the white stuff into the crack!&quot;&lt;/code&gt; — &lt;strong&gt;Torin Gauld&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I like to do fish.&quot; (&lt;strong&gt;Tallinn Quinton&lt;/strong&gt;) &quot;But Megan's a fish…&quot; (&lt;strong&gt;Torin Gauld)&lt;/strong&gt;&quot;&lt;/code&gt; — &lt;strong&gt;Various people&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;Date of registration(s): &lt;/strong&gt;&lt;code&gt;06/05/2022&lt;/code&gt; &lt;code&gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Preview image:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quote(s): &lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;Oooh, it&apos;s lumpy cum [sic]!&quot;&lt;/code&gt; — &lt;strong&gt;Norah Watts&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I might wanna eat some [of] that white stuff…&quot;&lt;/code&gt; — &lt;strong&gt;Norah Watts&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I love massaging wet fish.&quot;&lt;/code&gt; — &lt;strong&gt;Norah Watts&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;Yeah, just shove the white stuff into the crack!&quot;&lt;/code&gt; — &lt;strong&gt;Torin Gauld&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;&quot;I like to do fish.&quot; (&lt;strong&gt;Tallinn Quinton&lt;/strong&gt;) &quot;But Megan&apos;s a fish…&quot; (&lt;strong&gt;Torin Gauld)&lt;/strong&gt;&quot;&lt;/code&gt; — &lt;strong&gt;Various people&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;Date of registration(s): &lt;/strong&gt;&lt;code&gt;06/05/2022&lt;/code&gt; &lt;code&gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Preview image:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 
 &lt;!-- wp:image {&quot;id&quot;:887,&quot;width&quot;:372,&quot;height&quot;:371,&quot;sizeSlug&quot;:&quot;large&quot;,&quot;linkDestination&quot;:&quot;none&quot;} --&gt;
@@ -447,9 +447,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Fri, 06 May 2022 11:45:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/non-featured/2022/05/06</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/non-featured/2022/05/06</guid>
+        <pubDate>Fri, 06 May 2022 11:45:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/non-featured/2022/05/06</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/non-featured/2022/05/06</guid>
         
         <category>Non-featured QOTDs</category>
         
@@ -506,9 +506,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Fri, 06 May 2022 11:33:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/06/3</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/06/3</guid>
+        <pubDate>Fri, 06 May 2022 11:33:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/05/06/3</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/05/06/3</guid>
         
         <category>Featured quotes</category>
         
@@ -555,7 +555,7 @@
 &lt;!-- /wp:separator --&gt;
 
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;I'm fingering the fish with my hand soaked in white stuff.&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Norah Watts&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;06/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;yEAh Games Team&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;She was talking about the paper-mâché art project.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;I&apos;m fingering the fish with my hand soaked in white stuff.&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Norah Watts&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;06/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;yEAh Games Team&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;She was talking about the paper-mâché art project.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 
 &lt;!-- wp:image {&quot;id&quot;:879,&quot;sizeSlug&quot;:&quot;large&quot;,&quot;linkDestination&quot;:&quot;none&quot;} --&gt;
@@ -571,9 +571,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Fri, 06 May 2022 11:23:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/06/2</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/06/2</guid>
+        <pubDate>Fri, 06 May 2022 11:23:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/05/06/2</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/05/06/2</guid>
         
         <category>Featured quotes</category>
         
@@ -620,7 +620,7 @@
 &lt;!-- /wp:separator --&gt;
 
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;&quot;Ooooh, it's some women's feet! They look nice.&quot; (Norah Watts) &quot;And you're the one saying that Megan has a foot fetish?&quot; (Tallinn Quinton) &quot;No, I don't like anyone's feet — except for Marieke's.&quot; (Norah Watts)&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Various people&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;06/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;Torin Gauld&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;No context; quote was literal. She had seen the original feet in a flyer.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quote: &lt;/strong&gt;&lt;code&gt;&quot;Ooooh, it&apos;s some women&apos;s feet! They look nice.&quot; (Norah Watts) &quot;And you&apos;re the one saying that Megan has a foot fetish?&quot; (Tallinn Quinton) &quot;No, I don&apos;t like anyone&apos;s feet — except for Marieke&apos;s.&quot; (Norah Watts)&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Said by: &lt;/strong&gt;&lt;code&gt;Various people&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Date of registration: &lt;/strong&gt;&lt;code&gt;06/05/2022&lt;/code&gt; &lt;br /&gt;&lt;strong&gt;Submitted by: &lt;/strong&gt;&lt;code&gt;Torin Gauld&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;CONTEXT: &lt;/strong&gt;&lt;code&gt;No context; quote was literal. She had seen the original feet in a flyer.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;strong&gt;Quote image:&lt;/strong&gt;&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 
 &lt;!-- wp:image {&quot;id&quot;:876,&quot;sizeSlug&quot;:&quot;large&quot;,&quot;linkDestination&quot;:&quot;none&quot;} --&gt;
@@ -636,9 +636,9 @@
 
 &lt;!-- /wp:separator --&gt;
 </description>
-        <pubDate>Fri, 06 May 2022 11:18:00 +0000</pubDate>
-        <link>https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/06/1</link>
-        <guid isPermaLink="true">https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net/quotes/qotd/featured/2022/05/06/1</guid>
+        <pubDate>Fri, 06 May 2022 11:18:00 -0400</pubDate>
+        <link>http://localhost:4000/quotes/qotd/featured/2022/05/06/1</link>
+        <guid isPermaLink="true">http://localhost:4000/quotes/qotd/featured/2022/05/06/1</guid>
         
         <category>bruh</category>
         
