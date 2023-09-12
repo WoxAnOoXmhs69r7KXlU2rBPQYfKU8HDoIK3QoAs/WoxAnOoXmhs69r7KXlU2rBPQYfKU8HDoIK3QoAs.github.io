@@ -100,7 +100,7 @@ layout: default
 
       {% capture profile_image %}
       {% if page.saidby contains '@' %}
-      https://ugc.yeahgames.net/profile/p/default/png{{ page.saidby }}.png
+      https://ugc.yeahgames.net/profile/p/default/png/{{ page.saidby }}.png
       {% else %}
       https://ugc.yeahgames.net/profile/p/default/png/default.png
       {% endif %}
@@ -111,11 +111,11 @@ layout: default
           <span id="symbolbox">“</span>
           <p id="quotebox">{{page.quote}}</p>
           <hr id="quotehr" />
-          <img id="quotepfp" src="{{profile_image}}">
-          <div style="font-size:150%" id="name"><span>{% if page.saidby contains '@'%}<a
+          <a href="https://members.yeahgames.net/{{page.saidby}}"><img id="quotepfp" src="{{profile_image}}"></a>
+          <div style="font-size:150%;color:white" id="name"><span style="color:white">{% if page.saidby contains '@'%}<a
                 href="https://members.yeahgames.net/{{page.saidby}}"><span
-                  style="color:#ff4747!important">@</span>{{page.saidby | remove: "@"}}{% else %}{{page.saidby}}{% endif
-                %}</span><br><span id="quotedate">{{ page.date | date: "%B %d, %Y" }}</span><br></div>
+                  style="color:#ff4747!important">@</span><span style="color:white">{{page.saidby | remove: "@"}}{% else %}{{page.saidby}}{% endif
+                %}</span></a></span><br><span id="quotedate">{{ page.date | date: "%B %d, %Y" }}</span><br></div>
         </blockquote>
         <br>
         <br>

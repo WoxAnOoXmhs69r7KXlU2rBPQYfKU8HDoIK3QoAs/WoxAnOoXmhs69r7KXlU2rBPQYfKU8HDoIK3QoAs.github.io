@@ -25,7 +25,7 @@ Jekyll::Hooks.register :posts, :post_write do |post|
       'notes' => post.data['notes'],
       'tags' => post.data['tags'],
       'discord' => post.data['discord'],
-      'image' => json_file_path.sub('/api', '/archive/img').sub('.json', '.png').sub('_site', 'https://[TOKEN]-secure.yeahgames.net')
+      'image' => json_file_path.sub('/api', '/archive/img').sub('.json', '.png').sub('_site', 'https://3258xukj1pdvjerq7elfh19bc83mvzsi1bhozxox9thk7mscyvyyphud-secure.yeahgames.net')
     }    
 
     File.write(json_file_path, JSON.pretty_generate(quote_info))
